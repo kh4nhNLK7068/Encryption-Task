@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace EncryptionTask {
+namespace EncryptionTask.App_Data {
     
     
     /// <summary>
@@ -963,7 +963,7 @@ namespace EncryptionTask {
         }
     }
 }
-namespace EncryptionTask.UserDataTableAdapters {
+namespace EncryptionTask.App_Data.UserDataTableAdapters {
     
     
     /// <summary>

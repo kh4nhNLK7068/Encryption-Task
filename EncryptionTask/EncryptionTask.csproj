@@ -183,10 +183,10 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
-    <Compile Include="UserData.cs">
+    <Compile Include="App_Data\UserData.cs">
       <DependentUpon>UserData.xsd</DependentUpon>
     </Compile>
-    <Compile Include="UserData.Designer.cs">
+    <Compile Include="App_Data\UserData.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>UserData.xsd</DependentUpon>
@@ -250,21 +250,19 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="UserData.xsc">
+    <Content Include="App_Data\UserData.xsc">
       <DependentUpon>UserData.xsd</DependentUpon>
     </Content>
-    <None Include="UserData.xsd">
+    <None Include="App_Data\UserData.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>UserData.Designer.cs</LastGenOutput>
     </None>
-    <Content Include="UserData.xss">
+    <Content Include="App_Data\UserData.xss">
       <DependentUpon>UserData.xsd</DependentUpon>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
