@@ -303,6 +303,8 @@ namespace EncryptionTask.App_Data {
             
             private global::System.Data.DataColumn columnUserName;
             
+            private global::System.Data.DataColumn columnABCD;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public AspNetUsersDataTable() {
@@ -434,6 +436,14 @@ namespace EncryptionTask.App_Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ABCDColumn {
+                get {
+                    return this.columnABCD;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -469,7 +479,7 @@ namespace EncryptionTask.App_Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public AspNetUsersRow AddAspNetUsersRow(string Id, string Email, bool EmailConfirmed, string PasswordHash, string SecurityStamp, string PhoneNumber, bool PhoneNumberConfirmed, bool TwoFactorEnabled, System.DateTime LockoutEndDateUtc, bool LockoutEnabled, int AccessFailedCount, string UserName) {
+            public AspNetUsersRow AddAspNetUsersRow(string Id, string Email, bool EmailConfirmed, string PasswordHash, string SecurityStamp, string PhoneNumber, bool PhoneNumberConfirmed, bool TwoFactorEnabled, System.DateTime LockoutEndDateUtc, bool LockoutEnabled, int AccessFailedCount, string UserName, string ABCD) {
                 AspNetUsersRow rowAspNetUsersRow = ((AspNetUsersRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Id,
@@ -483,7 +493,8 @@ namespace EncryptionTask.App_Data {
                         LockoutEndDateUtc,
                         LockoutEnabled,
                         AccessFailedCount,
-                        UserName};
+                        UserName,
+                        ABCD};
                 rowAspNetUsersRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowAspNetUsersRow);
                 return rowAspNetUsersRow;
@@ -525,6 +536,7 @@ namespace EncryptionTask.App_Data {
                 this.columnLockoutEnabled = base.Columns["LockoutEnabled"];
                 this.columnAccessFailedCount = base.Columns["AccessFailedCount"];
                 this.columnUserName = base.Columns["UserName"];
+                this.columnABCD = base.Columns["ABCD"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -554,6 +566,8 @@ namespace EncryptionTask.App_Data {
                 base.Columns.Add(this.columnAccessFailedCount);
                 this.columnUserName = new global::System.Data.DataColumn("UserName", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnUserName);
+                this.columnABCD = new global::System.Data.DataColumn("ABCD", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnABCD);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnId}, true));
                 this.columnId.AllowDBNull = false;
@@ -570,6 +584,7 @@ namespace EncryptionTask.App_Data {
                 this.columnAccessFailedCount.AllowDBNull = false;
                 this.columnUserName.AllowDBNull = false;
                 this.columnUserName.MaxLength = 256;
+                this.columnABCD.MaxLength = 256;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -869,6 +884,22 @@ namespace EncryptionTask.App_Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string ABCD {
+                get {
+                    try {
+                        return ((string)(this[this.tableAspNetUsers.ABCDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ABCD\' in table \'AspNetUsers\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAspNetUsers.ABCDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsEmailNull() {
                 return this.IsNull(this.tableAspNetUsers.EmailColumn);
             }
@@ -925,6 +956,18 @@ namespace EncryptionTask.App_Data {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetLockoutEndDateUtcNull() {
                 this[this.tableAspNetUsers.LockoutEndDateUtcColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsABCDNull() {
+                return this.IsNull(this.tableAspNetUsers.ABCDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetABCDNull() {
+                this[this.tableAspNetUsers.ABCDColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -1099,6 +1142,7 @@ namespace EncryptionTask.App_Data.UserDataTableAdapters {
             tableMapping.ColumnMappings.Add("LockoutEnabled", "LockoutEnabled");
             tableMapping.ColumnMappings.Add("AccessFailedCount", "AccessFailedCount");
             tableMapping.ColumnMappings.Add("UserName", "UserName");
+            tableMapping.ColumnMappings.Add("ABCD", "ABCD");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
@@ -1107,7 +1151,7 @@ namespace EncryptionTask.App_Data.UserDataTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[AspNetUsers] ([Id], [Email], [EmailConfirmed], [PasswordHash], [SecurityStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEndDateUtc], [LockoutEnabled], [AccessFailedCount], [UserName]) VALUES (@Id, @Email, @EmailConfirmed, @PasswordHash, @SecurityStamp, @PhoneNumber, @PhoneNumberConfirmed, @TwoFactorEnabled, @LockoutEndDateUtc, @LockoutEnabled, @AccessFailedCount, @UserName)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[AspNetUsers] ([Id], [Email], [EmailConfirmed], [PasswordHash], [SecurityStamp], [PhoneNumber], [PhoneNumberConfirmed], [TwoFactorEnabled], [LockoutEndDateUtc], [LockoutEnabled], [AccessFailedCount], [UserName], [ABCD]) VALUES (@Id, @Email, @EmailConfirmed, @PasswordHash, @SecurityStamp, @PhoneNumber, @PhoneNumberConfirmed, @TwoFactorEnabled, @LockoutEndDateUtc, @LockoutEnabled, @AccessFailedCount, @UserName, @ABCD)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Email", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Email", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -1121,9 +1165,10 @@ namespace EncryptionTask.App_Data.UserDataTableAdapters {
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@LockoutEnabled", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LockoutEnabled", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AccessFailedCount", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AccessFailedCount", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@UserName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "UserName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ABCD", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ABCD", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[AspNetUsers] SET [Id] = @Id, [Email] = @Email, [EmailConfirmed] = @EmailConfirmed, [PasswordHash] = @PasswordHash, [SecurityStamp] = @SecurityStamp, [PhoneNumber] = @PhoneNumber, [PhoneNumberConfirmed] = @PhoneNumberConfirmed, [TwoFactorEnabled] = @TwoFactorEnabled, [LockoutEndDateUtc] = @LockoutEndDateUtc, [LockoutEnabled] = @LockoutEnabled, [AccessFailedCount] = @AccessFailedCount, [UserName] = @UserName WHERE (([Id] = @Original_Id))";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[AspNetUsers] SET [Id] = @Id, [Email] = @Email, [EmailConfirmed] = @EmailConfirmed, [PasswordHash] = @PasswordHash, [SecurityStamp] = @SecurityStamp, [PhoneNumber] = @PhoneNumber, [PhoneNumberConfirmed] = @PhoneNumberConfirmed, [TwoFactorEnabled] = @TwoFactorEnabled, [LockoutEndDateUtc] = @LockoutEndDateUtc, [LockoutEnabled] = @LockoutEnabled, [AccessFailedCount] = @AccessFailedCount, [UserName] = @UserName, [ABCD] = @ABCD WHERE (([Id] = @Original_Id))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Email", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Email", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -1137,6 +1182,7 @@ namespace EncryptionTask.App_Data.UserDataTableAdapters {
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@LockoutEnabled", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LockoutEnabled", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AccessFailedCount", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AccessFailedCount", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@UserName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "UserName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ABCD", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ABCD", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
@@ -1153,9 +1199,7 @@ namespace EncryptionTask.App_Data.UserDataTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Id, Email, EmailConfirmed, PasswordHash, SecurityStamp, PhoneNumber, Phone" +
-                "NumberConfirmed, TwoFactorEnabled, LockoutEndDateUtc, LockoutEnabled, AccessFail" +
-                "edCount, UserName FROM dbo.AspNetUsers";
+            this._commandCollection[0].CommandText = "SELECT * FROM dbo.AspNetUsers";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1243,7 +1287,7 @@ namespace EncryptionTask.App_Data.UserDataTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string Id, string Email, bool EmailConfirmed, string PasswordHash, string SecurityStamp, string PhoneNumber, bool PhoneNumberConfirmed, bool TwoFactorEnabled, global::System.Nullable<global::System.DateTime> LockoutEndDateUtc, bool LockoutEnabled, int AccessFailedCount, string UserName) {
+        public virtual int Insert(string Id, string Email, bool EmailConfirmed, string PasswordHash, string SecurityStamp, string PhoneNumber, bool PhoneNumberConfirmed, bool TwoFactorEnabled, global::System.Nullable<global::System.DateTime> LockoutEndDateUtc, bool LockoutEnabled, int AccessFailedCount, string UserName, string ABCD) {
             if ((Id == null)) {
                 throw new global::System.ArgumentNullException("Id");
             }
@@ -1291,6 +1335,12 @@ namespace EncryptionTask.App_Data.UserDataTableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[11].Value = ((string)(UserName));
             }
+            if ((ABCD == null)) {
+                this.Adapter.InsertCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[12].Value = ((string)(ABCD));
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1311,7 +1361,7 @@ namespace EncryptionTask.App_Data.UserDataTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Id, string Email, bool EmailConfirmed, string PasswordHash, string SecurityStamp, string PhoneNumber, bool PhoneNumberConfirmed, bool TwoFactorEnabled, global::System.Nullable<global::System.DateTime> LockoutEndDateUtc, bool LockoutEnabled, int AccessFailedCount, string UserName, string Original_Id) {
+        public virtual int Update(string Id, string Email, bool EmailConfirmed, string PasswordHash, string SecurityStamp, string PhoneNumber, bool PhoneNumberConfirmed, bool TwoFactorEnabled, global::System.Nullable<global::System.DateTime> LockoutEndDateUtc, bool LockoutEnabled, int AccessFailedCount, string UserName, string ABCD, string Original_Id) {
             if ((Id == null)) {
                 throw new global::System.ArgumentNullException("Id");
             }
@@ -1359,11 +1409,17 @@ namespace EncryptionTask.App_Data.UserDataTableAdapters {
             else {
                 this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(UserName));
             }
+            if ((ABCD == null)) {
+                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(ABCD));
+            }
             if ((Original_Id == null)) {
                 throw new global::System.ArgumentNullException("Original_Id");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_Id));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_Id));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1385,8 +1441,8 @@ namespace EncryptionTask.App_Data.UserDataTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Email, bool EmailConfirmed, string PasswordHash, string SecurityStamp, string PhoneNumber, bool PhoneNumberConfirmed, bool TwoFactorEnabled, global::System.Nullable<global::System.DateTime> LockoutEndDateUtc, bool LockoutEnabled, int AccessFailedCount, string UserName, string Original_Id) {
-            return this.Update(Original_Id, Email, EmailConfirmed, PasswordHash, SecurityStamp, PhoneNumber, PhoneNumberConfirmed, TwoFactorEnabled, LockoutEndDateUtc, LockoutEnabled, AccessFailedCount, UserName, Original_Id);
+        public virtual int Update(string Email, bool EmailConfirmed, string PasswordHash, string SecurityStamp, string PhoneNumber, bool PhoneNumberConfirmed, bool TwoFactorEnabled, global::System.Nullable<global::System.DateTime> LockoutEndDateUtc, bool LockoutEnabled, int AccessFailedCount, string UserName, string ABCD, string Original_Id) {
+            return this.Update(Original_Id, Email, EmailConfirmed, PasswordHash, SecurityStamp, PhoneNumber, PhoneNumberConfirmed, TwoFactorEnabled, LockoutEndDateUtc, LockoutEnabled, AccessFailedCount, UserName, ABCD, Original_Id);
         }
     }
     
