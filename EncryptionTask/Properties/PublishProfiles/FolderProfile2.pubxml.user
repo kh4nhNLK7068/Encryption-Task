@@ -4,15 +4,18 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <_PublishTargetUrl>C:\My Workspace\Learn C#\v17-19\EncryptionTask\EncryptionTask\bin\app.publish\</_PublishTargetUrl>
-    <History>True|2025-10-21T09:09:57.8074021Z;</History>
+    <_PublishTargetUrl>C:\LK's Workspace\Learn .NET\v17-19\EncryptionTask\EncryptionTask\bin\app.publish\</_PublishTargetUrl>
+    <History>True|2025-10-23T03:41:16.9843764Z;True|2025-10-23T10:18:07.9484628+07:00;True|2025-10-23T10:01:43.9494514+07:00;True|2025-10-23T09:48:29.7336690+07:00;True|2025-10-21T16:09:57.8074021+07:00;</History>
   </PropertyGroup>
   <ItemGroup>
+    <File Include=".gitignore">
+      <publishTime>10/21/2025 17:03:36</publishTime>
+    </File>
     <File Include="bin/about.cshtml.a8d08dba.compiled">
-      <publishTime>10/21/2025 16:09:56</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="bin/addphonenumber.cshtml.68f676f.compiled">
-      <publishTime>10/21/2025 16:09:56</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.dll">
       <publishTime>09/10/2013 16:29:20</publishTime>
@@ -21,10 +24,52 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>09/10/2013 16:29:20</publishTime>
     </File>
     <File Include="bin/App_global.asax.compiled">
-      <publishTime>10/21/2025 16:09:56</publishTime>
+      <publishTime>10/23/2025 10:41:15</publishTime>
     </File>
     <File Include="bin/App_global.asax.dll">
-      <publishTime>10/21/2025 16:09:56</publishTime>
+      <publishTime>10/23/2025 10:41:15</publishTime>
+    </File>
+    <File Include="bin/App_Web_0oxa05qr.dll">
+      <publishTime>10/23/2025 10:01:42</publishTime>
+    </File>
+    <File Include="bin/App_Web_2sdnmtnx.dll">
+      <publishTime>10/23/2025 10:01:42</publishTime>
+    </File>
+    <File Include="bin/App_Web_2xluwtmm.dll">
+      <publishTime>10/23/2025 09:48:28</publishTime>
+    </File>
+    <File Include="bin/App_Web_2zo4eoop.dll">
+      <publishTime>10/23/2025 10:41:16</publishTime>
+    </File>
+    <File Include="bin/App_Web_3ibpoma1.dll">
+      <publishTime>10/23/2025 10:18:06</publishTime>
+    </File>
+    <File Include="bin/App_Web_3w3mrgzi.dll">
+      <publishTime>10/23/2025 10:41:16</publishTime>
+    </File>
+    <File Include="bin/App_Web_44xc4sgq.dll">
+      <publishTime>10/23/2025 10:18:06</publishTime>
+    </File>
+    <File Include="bin/App_Web_51pb5xxw.dll">
+      <publishTime>10/23/2025 10:18:06</publishTime>
+    </File>
+    <File Include="bin/App_Web_5dw01dxv.dll">
+      <publishTime>10/23/2025 10:18:07</publishTime>
+    </File>
+    <File Include="bin/App_Web_bmhpzis0.dll">
+      <publishTime>10/23/2025 10:01:42</publishTime>
+    </File>
+    <File Include="bin/App_Web_gysuzbnh.dll">
+      <publishTime>10/23/2025 10:41:16</publishTime>
+    </File>
+    <File Include="bin/App_Web_imsxkekd.dll">
+      <publishTime>10/23/2025 09:48:28</publishTime>
+    </File>
+    <File Include="bin/App_Web_kgq2wqh2.dll">
+      <publishTime>10/23/2025 09:48:28</publishTime>
+    </File>
+    <File Include="bin/App_Web_lb2ymumn.dll">
+      <publishTime>10/23/2025 09:48:28</publishTime>
     </File>
     <File Include="bin/App_Web_lqrtyuwg.dll">
       <publishTime>10/21/2025 16:09:57</publishTime>
@@ -32,29 +77,47 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="bin/App_Web_nhx0535l.dll">
       <publishTime>10/21/2025 16:09:56</publishTime>
     </File>
+    <File Include="bin/App_Web_pld03hv3.dll">
+      <publishTime>10/23/2025 09:48:28</publishTime>
+    </File>
     <File Include="bin/App_Web_rjavirqp.dll">
       <publishTime>10/21/2025 16:09:56</publishTime>
     </File>
+    <File Include="bin/App_Web_rlbzxxo2.dll">
+      <publishTime>10/23/2025 10:18:06</publishTime>
+    </File>
     <File Include="bin/App_Web_whfz1ipa.dll">
       <publishTime>10/21/2025 16:09:57</publishTime>
+    </File>
+    <File Include="bin/App_Web_wiqv50f4.dll">
+      <publishTime>10/23/2025 10:01:42</publishTime>
+    </File>
+    <File Include="bin/App_Web_xwmzz3vv.dll">
+      <publishTime>10/23/2025 10:41:16</publishTime>
+    </File>
+    <File Include="bin/App_Web_xxjna52y.dll">
+      <publishTime>10/23/2025 10:41:16</publishTime>
+    </File>
+    <File Include="bin/App_Web_yu4dicxh.dll">
+      <publishTime>10/23/2025 10:01:42</publishTime>
     </File>
     <File Include="bin/App_Web_z30vpoiu.dll">
       <publishTime>10/21/2025 16:09:56</publishTime>
     </File>
     <File Include="bin/changepassword.cshtml.68f676f.compiled">
-      <publishTime>10/21/2025 16:09:56</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="bin/confirmemail.cshtml.5f83eb8c.compiled">
-      <publishTime>10/21/2025 16:09:56</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="bin/contact.cshtml.a8d08dba.compiled">
-      <publishTime>10/21/2025 16:09:56</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="bin/EncryptionTask.dll">
-      <publishTime>10/21/2025 16:09:53</publishTime>
+      <publishTime>10/23/2025 10:01:39</publishTime>
     </File>
     <File Include="bin/EncryptionTask.pdb">
-      <publishTime>10/21/2025 16:09:53</publishTime>
+      <publishTime>10/23/2025 10:01:39</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>10/23/2017 13:15:18</publishTime>
@@ -63,34 +126,34 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/23/2017 13:15:20</publishTime>
     </File>
     <File Include="bin/error.cshtml.639c3968.compiled">
-      <publishTime>10/21/2025 16:09:57</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="bin/externalloginconfirmation.cshtml.5f83eb8c.compiled">
-      <publishTime>10/21/2025 16:09:56</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="bin/externalloginfailure.cshtml.5f83eb8c.compiled">
-      <publishTime>10/21/2025 16:09:56</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="bin/forgotpassword.cshtml.5f83eb8c.compiled">
-      <publishTime>10/21/2025 16:09:56</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="bin/forgotpasswordconfirmation.cshtml.5f83eb8c.compiled">
-      <publishTime>10/21/2025 16:09:56</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="bin/index.cshtml.68f676f.compiled">
-      <publishTime>10/21/2025 16:09:56</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="bin/index.cshtml.a8d08dba.compiled">
-      <publishTime>10/21/2025 16:09:56</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="bin/lockout.cshtml.639c3968.compiled">
-      <publishTime>10/21/2025 16:09:57</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="bin/login.cshtml.5f83eb8c.compiled">
-      <publishTime>10/21/2025 16:09:56</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="bin/managelogins.cshtml.68f676f.compiled">
-      <publishTime>10/21/2025 16:09:56</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
       <publishTime>11/25/2019 10:57:50</publishTime>
@@ -141,13 +204,13 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/27/2012 13:00:52</publishTime>
     </File>
     <File Include="bin/register.cshtml.5f83eb8c.compiled">
-      <publishTime>10/21/2025 16:09:56</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="bin/resetpassword.cshtml.5f83eb8c.compiled">
-      <publishTime>10/21/2025 16:09:56</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="bin/resetpasswordconfirmation.cshtml.5f83eb8c.compiled">
-      <publishTime>10/21/2025 16:09:56</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>08/08/2018 05:38:48</publishTime>
@@ -297,10 +360,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/08/2018 12:18:16</publishTime>
     </File>
     <File Include="bin/sendcode.cshtml.5f83eb8c.compiled">
-      <publishTime>10/21/2025 16:09:56</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="bin/setpassword.cshtml.68f676f.compiled">
-      <publishTime>10/21/2025 16:09:56</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
       <publishTime>11/28/2018 13:04:24</publishTime>
@@ -324,25 +387,25 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/28/2018 13:04:24</publishTime>
     </File>
     <File Include="bin/verifycode.cshtml.5f83eb8c.compiled">
-      <publishTime>10/21/2025 16:09:56</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="bin/verifyphonenumber.cshtml.68f676f.compiled">
-      <publishTime>10/21/2025 16:09:56</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
       <publishTime>01/23/2014 13:57:34</publishTime>
     </File>
     <File Include="bin/_externalloginslistpartial.cshtml.5f83eb8c.compiled">
-      <publishTime>10/21/2025 16:09:56</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="bin/_layout.cshtml.639c3968.compiled">
-      <publishTime>10/21/2025 16:09:57</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="bin/_loginpartial.cshtml.639c3968.compiled">
-      <publishTime>10/21/2025 16:09:57</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="bin/_viewstart.cshtml.65a2d1ee.compiled">
-      <publishTime>10/21/2025 16:09:57</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="Content/bootstrap-theme.css">
       <publishTime>10/21/2025 10:50:20</publishTime>
@@ -390,7 +453,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/21/2025 10:50:20</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>10/21/2025 16:09:54</publishTime>
+      <publishTime>10/23/2025 10:41:13</publishTime>
+    </File>
+    <File Include="README.md">
+      <publishTime>10/21/2025 16:50:32</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>10/21/2025 10:50:20</publishTime>
@@ -432,88 +498,88 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/21/2025 10:50:22</publishTime>
     </File>
     <File Include="Views/Account/ConfirmEmail.cshtml">
-      <publishTime>10/21/2025 16:09:57</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="Views/Account/ExternalLoginConfirmation.cshtml">
-      <publishTime>10/21/2025 16:09:57</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="Views/Account/ExternalLoginFailure.cshtml">
-      <publishTime>10/21/2025 16:09:57</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="Views/Account/ForgotPassword.cshtml">
-      <publishTime>10/21/2025 16:09:57</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="Views/Account/ForgotPasswordConfirmation.cshtml">
-      <publishTime>10/21/2025 16:09:57</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="Views/Account/Login.cshtml">
-      <publishTime>10/21/2025 16:09:57</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="Views/Account/Register.cshtml">
-      <publishTime>10/21/2025 16:09:57</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="Views/Account/ResetPassword.cshtml">
-      <publishTime>10/21/2025 16:09:57</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="Views/Account/ResetPasswordConfirmation.cshtml">
-      <publishTime>10/21/2025 16:09:57</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="Views/Account/SendCode.cshtml">
-      <publishTime>10/21/2025 16:09:57</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="Views/Account/VerifyCode.cshtml">
-      <publishTime>10/21/2025 16:09:57</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="Views/Account/_ExternalLoginsListPartial.cshtml">
-      <publishTime>10/21/2025 16:09:57</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="Views/Home/About.cshtml">
-      <publishTime>10/21/2025 16:09:57</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="Views/Home/Contact.cshtml">
-      <publishTime>10/21/2025 16:09:57</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>10/21/2025 16:09:57</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="Views/Manage/AddPhoneNumber.cshtml">
-      <publishTime>10/21/2025 16:09:57</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="Views/Manage/ChangePassword.cshtml">
-      <publishTime>10/21/2025 16:09:57</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="Views/Manage/Index.cshtml">
-      <publishTime>10/21/2025 16:09:57</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="Views/Manage/ManageLogins.cshtml">
-      <publishTime>10/21/2025 16:09:57</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="Views/Manage/SetPassword.cshtml">
-      <publishTime>10/21/2025 16:09:57</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="Views/Manage/VerifyPhoneNumber.cshtml">
-      <publishTime>10/21/2025 16:09:57</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
-      <publishTime>10/21/2025 16:09:57</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="Views/Shared/Lockout.cshtml">
-      <publishTime>10/21/2025 16:09:57</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>10/21/2025 16:09:57</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="Views/Shared/_LoginPartial.cshtml">
-      <publishTime>10/21/2025 16:09:57</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>10/21/2025 10:50:18</publishTime>
     </File>
     <File Include="Views/_ViewStart.cshtml">
-      <publishTime>10/21/2025 16:09:57</publishTime>
+      <publishTime>10/23/2025 10:41:16</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>10/21/2025 16:09:54</publishTime>
+      <publishTime>10/23/2025 10:41:13</publishTime>
     </File>
   </ItemGroup>
 </Project>
